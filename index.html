@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fulanolandia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Fulanolandia</div>
+
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#tabla">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="inicio">
+    <h1>Bienvenido</h1>
+    <p>Somos dos fulanos que amamos hacer stickers.</p>
+    <button class="btn" onclick="saludar()">Haz clic aquí</button>
+</section>
+
+<section id="nosotros" class="animar">
+    <h2>Nuestro negocio</h2>
+
+    <p>
+    En Fulanolandia, nos dedicamos a crear stickers personalizados para todas tus necesidades. Ya sea que
+     quieras decorar tu laptop, tu botella de agua o tu cuaderno, tenemos el sticker perfecto para ti. 
+     Nuestro equipo de diseñadores talentosos trabaja arduamente para asegurarse de que cada sticker sea 
+     único y de alta calidad. 
+    </p>
+
+   
+    <img src="img/gato.jfif" class="gato">
+</section>
+
+<section id="tabla">
+
+    <h2>Productos</h2>
+    <p>Descubre nuestra increíble selección de stickers personalizados.</p>
+
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Acción</th>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="img/stikers pequeños.jfif" alt="Sticker Pequeño" class="img-producto">
+            </td>
+            <td>Stickers Pequeños</td>
+            <td>$15.000</td>
+            <td>
+                <button onclick="seleccionarProducto('Stickers Pequeños')">
+                    Seleccionar
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="img/stiker mediano.jfif" alt="Sticker Mediano" class="img-producto">
+            </td>
+            <td>Stickers Mediano</td>
+            <td>$25.000</td>
+            <td>
+                <button onclick="seleccionarProducto('Stickers Mediano')">
+                    Seleccionar
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="img/stiker grandes.jpg" alt="Sticker Grande" class="img-producto">
+            </td>
+            <td>Stickers Grandes</td>
+            <td>$40.000</td>
+            <td>
+                <button onclick="seleccionarProducto('Stickers Grandes')">
+                    Seleccionar
+                </button>
+            </td>
+        </tr>
+    </table>
+    <p id="productoElegido"></p>
+
+
+     <table class="tabla-mini">
+    <tr>
+        <th>🏆 Ranking</th>
+        <th>Producto</th>
+    </tr>
+
+    <tr>
+        <td>🥇</td>
+        <td>Sticker Pequeño</td>
+    </tr>
+
+    <tr>
+        <td>🥈</td>
+        <td>Sticker Mediano</td>
+    </tr>
+
+    <tr>
+        <td>🥉</td>
+        <td>Sticker Grande</td>
+    </tr>
+    <p class="ranking">¡Nuestros stickers más populares!✨</p>
+</table>
+
+</section>
+
+
+
+<section id="contacto" class="animar">
+    <h2>Contacto</h2>
+
+    <form id="formulario">
+        
+        <input type="text" placeholder="Nombre" required>
+
+        <input type="email" placeholder="Correo electrónico" required>
+
+        <textarea rows="5" placeholder="Escribe tu mensaje" required></textarea>
+
+        <button class="btn" type="submit">
+            Enviar Mensaje
+        </button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Fulanolandia - Todos los derechos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
