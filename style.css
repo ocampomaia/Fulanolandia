@@ -31,10 +31,24 @@ nav{
     align-items:center;
 }
 
+
+
 .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
     font-size:24px;
     font-weight:bold;
 }
+
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
 
 nav ul{
     display:flex;
@@ -74,16 +88,13 @@ section{
   
     
 
-    background:url("img/personas.jfif");
+    background:url("img/personas.jpg") no-repeat;
     width: 90%;
     margin: auto;
     margin-top: 10%;
     background-size:cover;
     background-position:center;
     border-radius:15px;
-    
-    
-    
     
 }
 
@@ -105,7 +116,7 @@ section{
 
 .btn{
     padding:12px 25px;
-    border:none;
+    border:2px solid rgb(255, 255, 255);
     border-radius:25px;
     -webkit-text-stroke: 1px #ffffff;
     background:#000000;
@@ -121,7 +132,7 @@ section{
          box-shadow:
     0 0 22px rgba(255, 255, 255, 0.74),
     0 0 34px rgba(156, 155, 180, 0.801);
-
+    
 }
 
 
