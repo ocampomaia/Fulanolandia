@@ -6,11 +6,11 @@ document
 .getElementById("formulario")
 .addEventListener("submit", function(e){
 
-    e.preventDefault();
+    //e.preventDefault();
 
     alert("Mensaje enviado correctamente.😁👍");
     alert("✨¡Gracias por contactarnos!✨");
-    this.reset();
+    //this.reset();
 });
 
 function seleccionarProducto(producto){

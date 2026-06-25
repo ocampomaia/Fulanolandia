@@ -35,7 +35,14 @@
     En Fulanolandia, nos dedicamos a crear stickers personalizados para todas tus necesidades. Ya sea que
      quieras decorar tu laptop, tu botella de agua o tu cuaderno, tenemos el sticker perfecto para ti. 
      Nuestro equipo de diseñadores talentosos trabaja arduamente para asegurarse de que cada sticker sea 
-     único y de alta calidad. 
+     único y de alta calidad.
+     
+     Nos especializamos en diseños personalizados, permitiendo que nuestros clientes conviertan sus ideas en stickers 
+     originales y creativos. Utilizamos materiales resistentes y colores vibrantes para garantizar una excelente durabilidad y un acabado profesional.
+     
+     Nuestro objetivo es ofrecer productos que reflejen la personalidad y el estilo de cada cliente, brindando una experiencia de
+    compra sencilla, rápida y confiable. Trabajamos con dedicación para garantizar la satisfacción de nuestros clientes y seguir innovando 
+    con nuevos diseños y tendencias.
     </p>
 
    
@@ -127,13 +134,29 @@
 <section id="contacto" class="animar">
     <h2>Contacto</h2>
 
-    <form id="formulario">
+    <form 
+       id="formulario" 
+       action="https://formspree.io/f/mpqgqnoe" 
+       method="POST">
         
-        <input type="text" placeholder="Nombre" required>
+        <input 
+        type="text"
+        name="nombre"
+        placeholder="Nombre" 
+        required>
 
-        <input type="email" placeholder="Correo electrónico" required>
+        <input 
+        type="email"
+        name="email"
+        placeholder="Correo electrónico" 
+        required>
 
-        <textarea rows="5" placeholder="Escribe tu mensaje" required></textarea>
+        <textarea 
+        rows="5"
+        name="mensaje"
+        placeholder="Escribe tu mensaje" 
+        required></textarea>
+        <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
 
         <button class="btn" type="submit">
             Enviar Mensaje
