@@ -267,6 +267,7 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
+   
 }
 
 .animar{
@@ -279,6 +280,30 @@ footer{
     opacity:1;
     transform:translateY(0);
 }
+
+.redes{
+    margin-top:15px;
+}
+
+.redes a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    font-size:30px;
+    margin:0 15px;
+    transition:0.3s;
+    
+
+}
+
+.redes a:hover{
+    color:#bebebe;
+    transform:scale(1.2);
+    text-shadow:
+    0 0 22px rgba(255, 255, 255, 0.74),
+    0 0 34px rgba(156, 155, 180, 0.801);
+    
+}
+
 
 @media(max-width:768px){
 
